@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ijaz Ahmad | Surgical Technologist</title>
+<meta name="description" content="Ijaz Ahmad is a Surgical Technologist with hands-on experience in operation theatre procedures, emergency case handling and CSSD management.">
+<meta property="og:title" content="Ijaz Ahmad | Surgical Technologist">
+<meta property="og:description" content="Operation theatre assistance, sterile technique and emergency surgical support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --scrub:#0E5A55; --scrub-dark:#093F3B; --mint:#D3EAE4; --paper:#F5F8F7;
+  --ink:#16221F; --muted:#51625E; --line:#CBD8D4; --alert:#B3382C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--alert);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;text-decoration:none;font-size:1.15rem}
+.nav ul{display:flex;gap:22px;list-style:none}
+.nav ul a{text-decoration:none;color:var(--muted);font-weight:600}
+.nav ul a:hover{color:var(--scrub)}
+
+/* hero */
+.hero{background:var(--scrub);color:#fff;padding:72px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--scrub-dark);padding:6px 14px;border-radius:99px;font-size:.95rem;margin-bottom:22px}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#7CE0B8}
+.hero h1{font-size:clamp(2.8rem,7vw,5.2rem);font-weight:700;letter-spacing:-.02em}
+.hero .role{font-family:"Bricolage Grotesque",sans-serif;font-size:1.5rem;margin:14px 0 18px;color:var(--mint)}
+.hero p.lead{max-width:56ch;color:#E3F1EE}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none}
+.btn.main{background:#fff;color:var(--scrub-dark)}
+.btn.alt{border:2px solid var(--mint);color:#fff}
+.btn:hover{background:var(--mint);color:var(--scrub-dark)}
+.photo{justify-self:center;width:min(100%,320px);aspect-ratio:1;border-radius:50%;border:6px solid var(--mint);background:var(--scrub-dark);overflow:hidden;display:grid;place-items:center}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* sections */
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:28px;letter-spacing:-.01em}
+.about p{max-width:68ch;font-size:1.15rem}
+.facts{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.fact{background:var(--mint);padding:10px 16px;border-radius:6px;font-weight:600;color:var(--scrub-dark)}
+
+/* timeline */
+.timeline{list-style:none;border-left:3px solid var(--scrub);margin-left:8px}
+.timeline li{position:relative;padding:0 0 38px 30px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-11px;top:6px;width:19px;height:19px;border-radius:50%;background:var(--paper);border:4px solid var(--scrub)}
+.timeline li.current::before{background:var(--scrub)}
+.timeline h3{font-size:1.4rem}
+.timeline .where{font-weight:600;color:var(--scrub)}
+.timeline .when{color:var(--muted);font-size:.98rem;margin-bottom:10px}
+.timeline ul{columns:2;column-gap:36px;padding-left:20px;margin-top:8px}
+.timeline ul li{padding:0 0 6px;border:0;position:static;break-inside:avoid}
+.timeline ul li::before{display:none}
+
+/* skills */
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.chips li{background:#fff;border:1.5px solid var(--scrub);color:var(--scrub-dark);padding:8px 16px;border-radius:6px;font-weight:600}
+
+/* education */
+.edu{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.edu article{background:#fff;border:1px solid var(--line);border-top:5px solid var(--scrub);padding:22px;border-radius:0 0 8px 8px}
+.edu .yrs{color:var(--muted);font-weight:600}
+.edu h3{font-size:1.25rem;margin:4px 0}
+.edu .grade{display:inline-block;margin-top:10px;background:var(--mint);padding:2px 12px;border-radius:99px;font-weight:600;color:var(--scrub-dark)}
+.langs{margin-top:34px;display:flex;gap:32px;flex-wrap:wrap}
+.langs strong{display:block}
+
+/* contact */
+.contact{background:var(--scrub-dark);color:#fff;border:0}
+.contact p{max-width:52ch;color:#D9ECE8;margin-bottom:26px}
+.links{display:flex;gap:14px;flex-wrap:wrap}
+.links a{background:#fff;color:var(--scrub-dark);padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none}
+.links a:hover{background:var(--mint)}
+footer{background:var(--scrub-dark);color:#9CC3BC;padding:22px 0;text-align:center;font-size:.95rem}
+
+@media (max-width:760px){
+  .hero{padding:48px 0 56px}
+  .hero .wrap{grid-template-columns:1fr}
+  .photo{order:-1;width:200px;justify-self:start}
+  .timeline ul{columns:1}
+  section{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Ijaz Ahmad</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="status">Working at Niazi Medical &amp; Dental College</span>
+        <h1>Ijaz Ahmad</h1>
+        <p class="role">Surgical Technologist</p>
+        <p class="lead">I prepare the operating room, keep the sterile field safe and support surgeons through every procedure, from planned operations to emergency cases.</p>
+        <div class="btns">
+          <a class="btn main" href="#experience">See my experience</a>
+          <a class="btn alt" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="assets/profile.jpg" alt="Portrait of Ijaz Ahmad">
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p>I am a Surgical Technologist with hands-on experience in operation theatre procedures, emergency case handling and CSSD (Central Sterile Supply Department) management. I assist surgeons during operations, maintain a sterile environment, prepare surgical instruments and keep patient safety first. I am detail-oriented and committed to high-quality support in every surgical and emergency care setting.</p>
+      <div class="facts">
+        <span class="fact">BS Allied Health Sciences (Surgery / OT)</span>
+        <span class="fact">Operation theatre &amp; CSSD</span>
+        <span class="fact">Urdu and English</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Work experience</h2>
+      <ol class="timeline">
+        <li class="current">
+          <h3>Surgical Technologist</h3>
+          <p class="where">Niazi Medical &amp; Dental College, Sargodha</p>
+          <p class="when">January 2026 to present</p>
+          <ul>
+            <li>Prepare the operating room before surgery</li>
+            <li>Sterilize and arrange surgical instruments and equipment</li>
+            <li>Maintain a sterile field during procedures</li>
+            <li>Assist surgeons by passing instruments and supplies</li>
+            <li>Help with patient positioning and draping</li>
+            <li>Count instruments, sponges and needles before and after surgery</li>
+            <li>Handle specimens safely and correctly</li>
+            <li>Support nurses and surgeons during operations</li>
+            <li>Clean and prepare the operating room after surgery</li>
+            <li>Follow hospital safety and infection control policies</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Surgical Technologist</h3>
+          <p class="where">Nishtar 2 Tertiary Care Hospital, Multan</p>
+          <p class="when">January 2025 to December 2025</p>
+        </li>
+        <li>
+          <h3>Intern</h3>
+          <p class="where">Rehman Medical Hospital, Multan</p>
+          <p class="when">November 2024 to January 2025</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Operation theatre assistance</li>
+        <li>Surgical instrument handling</li>
+        <li>Emergency case management</li>
+        <li>Pre- and post-operative patient care</li>
+        <li>Teamwork and communication in surgical settings</li>
+        <li>Patient safety and infection control</li>
+        <li>Knowledge of surgical procedures and equipment</li>
+        <li>Time management and multitasking</li>
+        <li>Record keeping and documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education and training</h2>
+      <div class="edu">
+        <article>
+          <p class="yrs">2019 to 2024</p>
+          <h3>BS AHS Surgery / OT</h3>
+          <p>University of Sargodha, Sargodha</p>
+          <span class="grade">Grade A</span>
+        </article>
+        <article>
+          <p class="yrs">2017 to 2019</p>
+          <h3>Intermediate</h3>
+          <p>Rashid Minhas High School, Alipur</p>
+          <span class="grade">Grade A+</span>
+        </article>
+        <article>
+          <p class="yrs">Secondary school</p>
+          <h3>Matriculation</h3>
+          <p>Government High School, Mahra</p>
+          <span class="grade">Grade A+</span>
+        </article>
+      </div>
+      <div class="langs">
+        <p><strong>Mother tongue</strong>Urdu</p>
+        <p><strong>Other language</strong>English</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Need a surgical technologist for your team? Send me a message or call. I am based in Muzaffargarh, Pakistan.</p>
+      <div class="links">
+        <a href="mailto:chijazgujjar76@gmail.com">Email me</a>
+        <a href="tel:+923019294143">Call +92 301 9294143</a>
+        <a href="https://www.linkedin.com/in/ijaz-ahmad-b2aa901a3" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 Ijaz Ahmad. All rights reserved.</footer>
+
+</body>
+</html>
